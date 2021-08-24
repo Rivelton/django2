@@ -22,9 +22,9 @@ import dj_database_url
 '''DATABASES['default'] = dj_database_url.config()
 DATABASES['default']['ENGINE'] = 'django.db.backends.postgresql_psycopg2'''''
 
-'''DATABASES = {
+DATABASES = {
     'default': dj_database_url.config()
-}'''
+}
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -88,13 +88,13 @@ WSGI_APPLICATION = 'django2.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
+'''DATABASES = {
     'default':{
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': Path(BASE_DIR, 'db.sqlite3')
     }
 }
-
+'''
 
 '''
 DATABASES = {
