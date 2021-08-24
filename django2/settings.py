@@ -14,9 +14,11 @@ from pathlib import Path
 import dj_database_url
 
 # Usando PostgreSQL com heroku
-DATABASE = {
+
+DATABASES = {
     'default': dj_database_url.config()
 }
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -79,6 +81,7 @@ WSGI_APPLICATION = 'django2.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+
 '''
 DATABASES = {
     'default': {
