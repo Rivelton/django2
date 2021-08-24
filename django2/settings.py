@@ -19,14 +19,12 @@ import dj_database_url
     import dj_database_url
     DATABASES['default'] = dj_database_url.config()'''
 
-
 '''DATABASES['default'] = dj_database_url.config()
 DATABASES['default']['ENGINE'] = 'django.db.backends.postgresql_psycopg2'''''
 
-DATABASES = {
+'''DATABASES = {
     'default': dj_database_url.config()
-}
-
+}'''
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -91,18 +89,16 @@ WSGI_APPLICATION = 'django2.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 
-'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'django2',
         'USER': 'root',
-        'HOST':'localhost',
-        'PORT':'3306',
+        'HOST': 'localhost',
+        'PORT': '3306',
 
+    }
 }
-}
-'''
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
