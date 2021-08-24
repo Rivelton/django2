@@ -15,9 +15,9 @@ import dj_database_url
 
 # Usando PostgreSQL com heroku
 
-DATABASES = {
+'''DATABASES = {
     'default': dj_database_url.config()
-}
+}'''
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -81,6 +81,19 @@ WSGI_APPLICATION = 'django2.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'django2',
+        'USER': 'root',
+        'HOST':'localhost',
+        'PORT':'3306',
+
+    }
+}
+
 
 '''
 DATABASES = {
