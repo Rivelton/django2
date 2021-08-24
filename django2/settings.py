@@ -11,21 +11,21 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 from pathlib import Path
-#import dj_database_url
+import dj_database_url
 
 # Usando PostgreSQL com heroku
 
-if os.environ.get('DATABASE_URL', None):
+'''if os.environ.get('DATABASE_URL', None):
     import dj_database_url
-    DATABASES['default'] = dj_database_url.config()
+    DATABASES['default'] = dj_database_url.config()'''
 
 
 '''DATABASES['default'] = dj_database_url.config()
 DATABASES['default']['ENGINE'] = 'django.db.backends.postgresql_psycopg2'''''
 
-'''DATABASES = {
+DATABASES = {
     'default': dj_database_url.config()
-}'''
+}
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
